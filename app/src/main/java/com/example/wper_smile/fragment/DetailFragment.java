@@ -90,6 +90,7 @@ public class DetailFragment extends Fragment {
                 textViewWord.setText("Lemon");
                 textViewMeaning.setText("柠檬");
                 textViewSample.setText("A lemon is an acid fruit.");
+                break;
         }
 
         return view;

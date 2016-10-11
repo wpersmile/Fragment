@@ -54,6 +54,7 @@ public class ItemFragment extends Fragment {
         }
     }
 
+    //OnCreateView():当Fragment显示界面时回调此方法，返回显示的View。
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
@@ -73,7 +74,8 @@ public class ItemFragment extends Fragment {
         return view;
     }
 
-
+//Fragment必须位于Activity中，当Activity装载Fragment时，系统首先会回调onAttach()方法
+//该方法的context参数即是Fragment所在的Activity。
     @Override
     public void onAttach(Context context) {
         super.onAttach(context);
@@ -101,6 +103,7 @@ public class ItemFragment extends Fragment {
      * "http://developer.android.com/training/basics/fragments/communicating.html"
      * >Communicating with Other Fragments</a> for more information.
      */
+    //fragment向Activity传递数据
     public interface OnListFragmentInteractionListener {
         // TODO: Update argument type and name
         void onListFragmentInteraction(WordItem item);

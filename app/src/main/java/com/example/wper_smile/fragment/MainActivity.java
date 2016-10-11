@@ -17,8 +17,10 @@ public class MainActivity extends AppCompatActivity
     }
 
     public void onListFragmentInteraction(WordsContent.WordItem item){
+        //Bundle类的作用是传递数据
         Bundle arguments=new Bundle();
         arguments.putString("id",item.id);
+
         Fragment fragment=new DetailFragment();
         fragment.setArguments(arguments);
         getFragmentManager().beginTransaction().replace(R.id.worddetail,fragment).commit();

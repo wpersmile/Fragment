@@ -52,7 +52,7 @@ public class WordsContent {
     }
 
     /**
-     * A dummy item representing a piece of content.
+     * 列表条目内容
      */
     public static class WordItem {
         public final String id;
